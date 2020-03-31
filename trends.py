@@ -1,8 +1,8 @@
 import sys
 import pycountry
 import matplotlib.pyplot as plt
-from pytrends.request import TrendReq
 from PyQt5.QtWidgets import *
+from pytrends.request import TrendReq
 pytrend = TrendReq()
 
 #Class that creates the GUI and contains most of it's features
@@ -170,7 +170,7 @@ def interest_over_time(list):
 
 #The interest by regeion system
 def interest_by_region(list, region):
-    print(region)
+
     if region == "Worldwide":
         pytrend.build_payload(kw_list=list)
     else:
