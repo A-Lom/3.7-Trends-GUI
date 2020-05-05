@@ -177,6 +177,7 @@ def interest_over_time(list):
     pytrend.build_payload(kw_list=list)
     interest_over_time = pytrend.interest_over_time()
     interest_over_time.plot(y=list, figsize=(15, 8), kind ='line')
+    plt.ylabel('Search Interest')
     plt.show()
 
 
@@ -195,6 +196,7 @@ def interest_by_region(list, region):
         error()
         return
     interest_by_region.plot(y=list, figsize=(15, 8), kind ='bar')
+    plt.ylabel('Search Interest')
     plt.show()
 
 
