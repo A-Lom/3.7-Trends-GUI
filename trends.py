@@ -81,7 +81,7 @@ class Window(QMainWindow):
         alert.setStandardButtons(QMessageBox.Ok)
         alert.exec()
 
-    # Alet for if a user has more than 5 search terms due
+    # Alert for if a user has more than 5 search terms due
     # to google only accepting a max of 5
     def max_num_alert(self, list_num):
         alert = QMessageBox()
@@ -93,7 +93,7 @@ class Window(QMainWindow):
         alert.setStandardButtons(QMessageBox.Ok)
         alert.exec()
 
-    # Alet for if a user has no search term provided
+    # Alert for if a user has no search term provided
     def min_num_alert(self):
         alert = QMessageBox()
         alert.setWindowTitle("ALERT")
@@ -103,7 +103,7 @@ class Window(QMainWindow):
         alert.setStandardButtons(QMessageBox.Ok)
         alert.exec()
 
-    # Creates the main gui for the code. (AKA the skeleton of the code)
+    # Creates the main gui for the code. (AKA the heart of the code)
     def initUI(self):
         self.setGeometry(0, 0, 500, 500)
         self.setWindowTitle("Test")
